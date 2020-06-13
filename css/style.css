@@ -1,0 +1,405 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+html{
+    -webkit-text-size-adjust: 100%;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.fas{
+    color: #559ac8;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrap{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    display: none;
+}
+
+.header{
+    width: 1024px;
+    height: 380px;
+    background-image: url(../img/Hero.png);
+    background-position: center top;
+    text-align: center;
+    position: relative;
+}
+
+.header h1{
+    font-family: PingFangTC-Regular;
+    font-size: 40px;
+    line-height: 41px;
+    letter-spacing: 3.89px;
+    color: #FFFFFF ;
+    padding: 89px 0 96px 0;
+}
+
+#areas{
+    width: 452px;
+    height: 48px;
+    border: 3px solid #FFFFFF;
+    border-radius: 3px;
+    text-indent: 9.5px;
+    font-family: PingFangTC-Regular;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    background:url(../img/icons_down.png) no-repeat center right  rgba(255,255,255, 0.7);
+    background-color: rgba(255,255,255, 0.7);
+    background-position-x: 419px;
+    cursor: pointer;
+    outline: none;
+}
+
+.hotarea{
+    width: 800px;
+    height: 112px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px 0px rgb(0, 0, 0,0.2);
+    text-align: left;
+    position: absolute;
+    top: 352px;
+    left: 112px;
+}
+
+.hotarea h2{
+    font-family: AppleSystemUIFont;
+    color: #000000;
+    font-size: 18px;
+    line-height: 21px;
+    padding-top: 26px;
+    padding-left: 26px;
+}
+
+.hotbtn{
+    padding-top: 14px;
+    padding-left: 51px;
+}
+
+.hotbtn input{
+    width: 130px;
+    height: 42px;
+    border-radius: 5px;
+    border:0;
+    font-family: PingFangTC-Regular;
+    font-size: 20px;
+    color: #FFFFFF;
+    background-color: #8A82CC ;
+    margin-right: 23px;
+    cursor: pointer;
+    outline: none;
+}
+
+.hotbtn input:nth-of-type(2){
+    background-color: #FFA782;
+    margin-right: 30px;
+}
+
+.hotbtn input:nth-of-type(3){
+    background-color: #F5D105;
+    margin-right: 30px;
+}
+
+.hotbtn input:nth-of-type(4){
+    background-color: #559AC8;
+}
+
+.hotbtn input:hover{
+    background-color: #00e3e3;
+}
+
+.line{
+    width: 900px;
+    height: 1px;
+    background: linear-gradient(to right, #559AC8, #559AC8 5px, transparent 5px, transparent);
+    background-size: 12px 100%;
+    position: absolute;
+    top: 513px;
+    left: 62px;
+}
+
+.round{
+    width: 24px;
+    height: 24px;
+    border-radius: 24px;
+    border:2px solid #559AC8;
+    box-sizing: border-box;
+    position: absolute;
+    top: 501px;
+    left: 500px;
+    background-color: #FCFCFC;
+}
+
+.round img{
+    width: 12px;
+    height: 9px;
+    padding-top: 7px;
+}
+
+.content{
+    background-color:#FCFCFC;
+    padding: 210px 0px 0px 0px;
+    overflow: hidden;
+}
+
+.content  h1{
+    color: #8A82CC;
+    font-size: 36px;
+    font-family: SFNSDisplay;
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.viewpoint {
+    width: 944px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    position: relative;
+}
+
+.point{
+    width: 464px;
+    background-color:white;
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+    margin-bottom: 36px;
+    float: left;
+    margin-right: 16px; 
+}
+
+.point:nth-of-type(even){
+    margin-right: 0px;
+}
+
+.content .viewpoint .title:before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.3) 85%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.4) 100%);
+    background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.3) 85%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.4) 100%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0.2) 70%, rgba(0, 0, 0, 0.25) 75%, rgba(0, 0, 0, 0.3) 85%, rgba(0, 0, 0, 0.35) 90%, rgba(0, 0, 0, 0.4) 100%);
+  }
+
+.title{
+    width: 464px;
+    height: 155px;
+    position: relative;
+}
+
+.title img{
+    width: 100% ;
+    height: 155px;
+    object-fit: cover;
+}
+
+.title h2{
+    font-family: SFNSDisplay;
+    font-size: 24px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 22px;
+    bottom: 14px;
+}
+
+.title p{
+    font-family: PingFangTC-Regular;
+    font-size: 16px;
+    color: #FFFFFF;
+    position: absolute;
+    right: 24px;
+    bottom: 11px;
+}
+
+.new{
+    padding: 16px 24px;
+    position: relative;
+}
+
+.new div{
+    margin-bottom: 8px;
+    line-height: 30px;
+    position: relative;
+}
+
+.new div:nth-of-type(4){
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+
+.new div img{
+    position: absolute;
+}
+
+.new div:nth-child(4)img{
+    position: relative;
+}
+
+.new div p{
+    font-family: AppleSystemUIFont;
+    font-size: 16px;
+    color: #000000;
+    padding-left: 25px;
+}
+
+.page{
+    padding-top: 8px;
+    padding-bottom: 39px;
+    background-color: #FCFCFC;
+    display: flex;
+    justify-content: center;
+    clear: both;
+}
+
+.prev{
+    display: block;
+    width: 50px;
+    height: 24px;
+    margin-right: 22px;
+    cursor: pointer;
+}
+
+.nowPage{
+    display: flex;
+}
+
+.next{
+    display: block;
+    width: 50px;
+    height: 24px;
+    margin-left: 22px;
+    cursor: pointer;
+}
+
+.prev:not(.disabled):hover, 
+.next:not(.disabled):hover{
+    color: #00e3e3;
+}
+
+.disabled{
+    cursor: default;
+    color: gray;
+}
+
+.nowPage li{
+    width: 24px;
+    height: 24px;
+    display: block;
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+    color: #000000;
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+.nowPage li:last-of-type{
+    margin-right:0px;
+}
+
+.nowPage li:not(.active):hover{
+    color: #00e3e3;
+}
+
+.nowPage li.active{
+    color: #00e3e3;
+    cursor:default;
+}
+
+#goTop{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 28px;
+    bottom: 197px;
+    cursor: pointer;
+}
+
+.footer{
+    width: 1024px;
+    height:90px;
+    background-color: #559AC8;
+    clear: both;
+}
+
+.footer p:first-of-type{
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 24px 0px 15px 0px;
+}
+
+.footer p:last-of-type{
+    font-family: AppleSystemUIFont;
+    font-size: 14px;
+    color: #FFD366;
+    text-align: center;
+    padding-bottom: 23px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
